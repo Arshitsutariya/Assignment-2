@@ -1,0 +1,70 @@
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email": "arshit@gmail.com",
+    "password": "arshit",
+    "username": "arshit",
+    "shipping_address": "cnd"
+}
+
+###
+GET  http://localhost:3000/users
+
+###
+GET  http://localhost:3000/products
+
+###
+GET  http://localhost:3000/cart
+###
+GET  http://localhost:3000/orders
+###
+GET  http://localhost:3000/commentsnode 
+###
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "desc": "product1",
+    "price": "100",
+    "cost": "10",
+    "img":"https://cdn.rushordertees.com/design/ZoomImage.php?src=NTUyMTM2Mw_f&style=RT2000&colorCode=WHT&x=240&y=300&width=880&height=880&scale=1.7&watermark=false&autoInvertDesign=true"
+}
+
+
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+    "productId": "65727e4c0b20311658fe9133",
+    "userId": "65727e2a0b20311658fe9131"
+   
+}
+
+###
+POST http://localhost:3000/cart
+Content-Type: application/json
+
+{
+    "productId": "65727e4c0b20311658fe9133",
+    "userId": "65727e2a0b20311658fe9131",
+    "qty":"2"
+   
+}
+
+###
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+    "productId": "65727e4c0b20311658fe9133",
+    "userId": "65727e2a0b20311658fe9131",
+    "desc":"Excellent",
+    "rating":"3"
+   
+}
+
+
