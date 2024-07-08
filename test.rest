@@ -6,65 +6,65 @@ Content-Type: application/json
     "email": "arshit@gmail.com",
     "password": "arshit",
     "username": "arshit",
-    "shipping_address": "cnd"
+    "shipping_address": "Kitchener"
 }
 
 ###
 GET  http://localhost:3000/users
 
 ###
-GET  http://localhost:3000/products
-
-###
-GET  http://localhost:3000/cart
-###
-GET  http://localhost:3000/orders
-###
-GET  http://localhost:3000/commentsnode 
-###
 POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-    "desc": "product1",
-    "price": "100",
-    "cost": "10",
-    "img":"https://cdn.rushordertees.com/design/ZoomImage.php?src=NTUyMTM2Mw_f&style=RT2000&colorCode=WHT&x=240&y=300&width=880&height=880&scale=1.7&watermark=false&autoInvertDesign=true"
+    "desc": "Mango Juice",
+    "price": "10",
+    "cost": "100",
+    "img":"https://www.google.com/search?q=delmonte+mange+juice+image&rlz=1C1ONGR_enCA1089CA1089&oq=delmonte+mange+juice+image&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTINCAEQLhivARjHARiABDIJCAIQABgKGIAEMhAIAxAuGK8BGMcBGIAEGJgFMg0IBBAuGK8BGMcBGIAEMgcIBRAAGIAEMgcIBhAAGIAEMgoIBxAuGIAEGOUEMgwICBAuGAoYgAQY5QTSAQg5NTU0ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#vhid=5149YuP9jCe05M&vssid=l"
 }
 
-
+###
+GET  http://localhost:3000/products
 
 ###
 POST http://localhost:3000/orders
 Content-Type: application/json
 
 {
-    "productId": "65727e4c0b20311658fe9133",
-    "userId": "65727e2a0b20311658fe9131"
+    "productId": "668ae259e976023f586f63eb",
+    "userId": "668ae207e976023f586f63e9"
    
 }
+
+###
+GET  http://localhost:3000/orders
 
 ###
 POST http://localhost:3000/cart
 Content-Type: application/json
 
 {
-    "productId": "65727e4c0b20311658fe9133",
-    "userId": "65727e2a0b20311658fe9131",
-    "qty":"2"
+    "productId": "668ae259e976023f586f63eb",
+    "userId": "668ae207e976023f586f63e9",
+    "qty":"5"
    
 }
+
+###
+GET  http://localhost:3000/cart
+
 
 ###
 POST http://localhost:3000/comments
 Content-Type: application/json
 
 {
-    "productId": "65727e4c0b20311658fe9133",
-    "userId": "65727e2a0b20311658fe9131",
+    "productId": "668ae259e976023f586f63eb",
+    "userId": "668ae207e976023f586f63e9",
     "desc":"Excellent",
-    "rating":"3"
+    "rating":"5"
    
 }
 
-
+###
+GET  http://localhost:3000/comments
